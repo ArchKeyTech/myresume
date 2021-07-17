@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.css" />
+    <!--link to font-awesome website for icons-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--div element to contain content of resume-->
+    <div class="container">
+      <!--left section of resume-->
+      <section class="left_side">
+        <!--div block holding profile picture and name-->
+        <div class="profileText">
+          <div class="imgBx">
+            <img class="dan-img" src="images/dan.jpg" />
+          </div>
+          <h2>Dan-Samuel Moleka</h2>
+        </div>
+
+        <!--section containing all contact details contents-->
+        <section class="contactDetails">
+          <!-- contacts header for contact details-->
+          <h3 class="title">Contacts</h3>
+          <!--list to store contact details: cell, email, linkdin-->
+          <ul>
+            <li>
+              <span class="icon"
+                ><i class="fas fa-phone-square-alt"></i>
+              </span>
+              <span class="text">(+27)61 337 57 88</span>
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fas fa-envelope"></i>
+              </span>
+              <span class="email"
+                ><a href="mailto:dan.moleka@gmail.com"
+                  >dan.moleka@gmail</a
+                ></span
+              >
+            </li>
+            <li>
+              <span class="icon"
+                ><i class="fab fa-linkedin"></i>
+              </span>
+              <span class="email"
+                ><a href="www.linkedin.com/in/dan-samuel-moleka-245264195"
+                  >www.linkedin.com/in/dan-samuel-moleka-245264195</a
+                ></span
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!--section to store education contents-->
+        <section class="contactDetails education">
+          <!--heading for education content-->
+          <h3 class="title">Education</h3>
+
+          <!--list storing education texts: year, degree/certificate, institution-->
+          <ul>
+            <li>
+              <h5>2021-ongoing</h5>
+              <h4>Web & Software Dev Bootcamp</h4>
+              <h4>HyperionDev</h4>
+            </li>
+            <li>
+              <h5>2015-2018</h5>
+              <h4>Electrical Engineering National Diploma (paused)</h4>
+              <h4>Cape Peninsula University of Technology</h4>
+            </li>
+            <li>
+              <h5>2009-2013</h5>
+              <h4>Matriculation</h4>
+              <h4>Edgemead High School</h4>
+            </li>
+          </ul>
+        </section>
+
+        <!--section for language contents-->
+        <section class="contactDetails language">
+          <!--heading for languages contents-->
+          <h3 class="title">Languages</h3>
+
+          <!--list storing spoken languages and proficiency with percentage bar-->
+          <ul>
+            <li>
+              <span style="font-weight: 600" class="text">French</span>
+              <span class="percent">
+                <div style="width: 95%"></div>
+              </span>
+            </li>
+            <li>
+              <span style="font-weight: 600" class="text">English</span>
+              <span class="percent">
+                <div style="width: 100%"></div>
+              </span>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <!--the right-hand section of the resume-->
+      <section class="right_side">
+        <!--the about me section stores bio and professional contents-->
+        <section class="aboutme">
+          <!--heading for Bio content-->
+          <h2 class="title2">Bio</h2>
+          <!--Bio paragraph-->
+          <p>
+            My name is Dan-Samuel Moleka, I am originally from the Democratic
+            Republic of Congo, but I have spent most of my life in Cape Town,
+            South Africa. I am initially self-taught when it comes to
+            programming. I began to learn Python briefly in 2019 and in depth in
+            2020 , before deciding to join the HyperionDev Full Immersive Web
+            Dev & Software Dev Bootcamp in 2021. <br /><br />
+
+            My passions and interests range from electronics, chess, art, music,
+            nature and tech. I am truly passionate about about the improvement
+            of human lives through tech, especially when the technology
+            developed carries some essence of nature's problem solving skills
+            such as biomimicry. <br /><br />
+
+            I am truly fascinated by the field of computer vision, mostly the
+            advances in augmented reality and mixed reality. It is something I
+            wish to be part of in the future. I truly believe mixed reality to
+            be the next step in human-tech interaction after the touch-screen
+            era popularized by Apple's first Iphone.
+          </p>
+        </section>
+
+        <!--section holding work experience content-->
+        <section class="aboutme">
+          <!--heading for work experience contents-->
+          <h2 class="title2">Work Experience</h2>
+          <!--div block holding work experience texts-->
+          <div class="box">
+            <!--year and company texts-->
+            <div class="year_company">
+              <h5>2019-2020</h5>
+              <h5>MESA Solutions</h5>
+            </div>
+            <!--div block holding work position/role text and description-->
+            <div class="text">
+              <h4>EMC Engineer Intern</h4>
+              <p>
+                I worked as an Electromagnetic Compatibility engineer,
+                investigating electromagnetic emissions of radio telescopes and
+                submitting data analysis after measurements.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--section to skills contents-->
+        <section class="aboutme skills">
+          <!--heading for skills contents-->
+          <h2 class="title2">Skills</h2>
+          <!--div block to hold coding language skills: python, javascript etc-->
+          <div class="box">
+            <h4>Python</h4>
+            <!--div block to hold percentage bar for coding skills competence-->
+            <div class="percent">
+              <div style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>Javascript</h4>
+            <div class="percent">
+              <div style="width: 50%"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>HTML</h4>
+            <div class="percent">
+              <div style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>CSS</h4>
+            <div class="percent">
+              <div style="width: 50%"></div>
+            </div>
+          </div>
+          
+        </section>
+
+        <!--section for interests contents-->
+        <section class="aboutme interests">
+          <!--heading for interests contents-->
+          <h2 class="title2">Interests</h2>
+          <!--list to store all interest icons and texts-->
+          <ul>
+            <li><i class="fas fa-car-battery"></i>
+              Electronic</li>
+            <li><i class="fas fa-music"></i>
+              Music</li>
+            <li><i class="fas fa-chess"></i>
+              Chess</li>
+            <li><i class="fas fa-palette"></i>
+              Art</li>
+            <li><i class="fas fa-atom"></i>
+              Science</li>
+            <li><i class="fas fa-leaf"></i>
+              Nature</li>
+          </ul>
+      </section>
+    </div>
+  </body>
+</html>
