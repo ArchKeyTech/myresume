@@ -114,7 +114,7 @@ a:hover {
 }
 
 .contactDetails.education h5 {
-  color: orange;
+  color: #ffc250;
   font-weight: bold;
   font-size: 15px;
 }
@@ -224,6 +224,41 @@ p {
   height: 100%;
 }
 
+.logo {
+  width: 80px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.logo:hover {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.myskills ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.myskills li {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* 
+.myskills{
+
+  display:flex;
+  flex-direction: column;
+} */
 .aboutme.interests ul {
   padding: 3px;
   padding-left: 20px;

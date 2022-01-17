@@ -113,7 +113,7 @@ a {
 
 .contactDetails.education h5 {
   //styling of years under education content
-  color: orange;
+  color: rgb(255, 194, 80);
   font-weight: bold;
   font-size: 15px;
 }
@@ -226,6 +226,36 @@ p {
   position: absolute;
   height: 100%;
 }
+
+.logo{
+  width: 80px;
+  transition: 500ms;
+  &:hover {
+    transition: 500ms;
+    transform: scale(1.09);
+  }
+}
+
+
+
+.myskills ul{
+  list-style: none;
+
+  display:flex;
+  flex-direction: row;
+}
+.myskills li {
+  font-weight: bold;
+  margin-right: 15px;
+
+}
+/* 
+.myskills{
+
+  display:flex;
+  flex-direction: column;
+} */
+
 
 .aboutme.interests ul {
   // styling interest contents
