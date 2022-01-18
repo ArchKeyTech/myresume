@@ -10,23 +10,27 @@
 body {
   //styling body element
   background: lightslategray; //background color of page
+  // overflow-x: hidden;
+  
  
 }
 .cv-box{
   display: flex; //flex display for flexible web page elements
   justify-content: center; //all content under body element justified center
   align-items: center; //align all items under body element to center
-  min-height: 100vh;
+  flex-direction: column;
+  height: 100vh;
+  
 }
 
 .container {
   //styling of container holding both left and right-hand side contents
   position: relative;
-  width: 100%;
   min-height: 1000px;
   background: white;
   margin: 50px;
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 2fr; // making 2 columns to be 1 and 2 fraction of the size
   
   //box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
@@ -38,6 +42,7 @@ body {
   background: lightseagreen;
   padding: 40px;
 }
+
 
 .profileText {
   // styling of author photo and name content
@@ -55,6 +60,8 @@ body {
   background: white;
   padding: 40px;
 }
+
+
 
 .dan-img {
   //styling of photo
@@ -168,12 +175,27 @@ a {
   margin-bottom: 10px;
 }
 
+.para{
+  padding: 10px 20px;
+  border: 3px solid rgba(lightseagreen, 0.4);
+  border-radius: 1rem;
+}
+
+.work  {
+
+  margin-top: 15px;
+  ul{
+    color: darkslategray;
+    margin-left: 16px;
+  }
+  
+}
+
+
 p {
   //styling of paragraphs in right-hand side contents
   color: darkslategray;
-  padding: 10px 10px;
-  border: 3px solid rgba(lightseagreen, 0.4);
-  border-radius: 1rem;
+  
 }
 
 .aboutme .box {
@@ -205,7 +227,7 @@ p {
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 110px 1fr;
+  // grid-template-columns: 110px 1fr;
   justify-content: center;
   align-items: center;
 }
@@ -241,10 +263,29 @@ p {
 }
 
 
+.myskills{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .icon-row1{
+    padding: 20px 35px 30px 35px;
+  }
+  .icon-row2{
+    padding: 20px 35px 30px 35px;
+  }
+  .icon-row3{
+    padding: 20px 35px 30px 35px;
+  }
+  .icon-row4{
+    padding: 20px 35px 30px 35px;
+  }
+}
 
 .myskills ul{
   list-style: none;
 
+  grid-template-columns: repeat(12, 1fr);
   display:flex;
   flex-direction: row;
 }
@@ -253,12 +294,8 @@ p {
   margin-right: 15px;
 
 }
-/* 
-.myskills{
 
-  display:flex;
-  flex-direction: column;
-} */
+
 
 
 .aboutme.interests ul {
@@ -285,10 +322,39 @@ p {
   color: orange;
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   //setting width threshold for when page is resized
+
   .container {
-    margin: 10px;
-    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
+
+  .myskills{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    .icon-row1{
+      padding: 20px 15px 20px 15px;
+    }
+    .icon-row2{
+      padding: 20px 15px 20px 15px;
+    }
+    .icon-row3{
+      padding: 20px 15px 20px 15px;
+    }
+    .icon-row4{
+      padding: 20px 15px 20px 15px;
+    }
+    
+
+    
+  }
+
 }
+
+
+
