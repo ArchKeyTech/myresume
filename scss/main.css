@@ -19,17 +19,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
 }
 
 .container {
   position: relative;
-  width: 100%;
   min-height: 1000px;
   background: white;
   margin: 50px;
   display: -ms-grid;
   display: grid;
+  width: 100%;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
 }
@@ -161,11 +165,23 @@ a:hover {
   margin-bottom: 10px;
 }
 
-p {
-  color: darkslategray;
-  padding: 10px 10px;
+.para {
+  padding: 10px 20px;
   border: 3px solid rgba(32, 178, 170, 0.4);
   border-radius: 1rem;
+}
+
+.work {
+  margin-top: 15px;
+}
+
+.work ul {
+  color: darkslategray;
+  margin-left: 16px;
+}
+
+p {
+  color: darkslategray;
 }
 
 .aboutme .box {
@@ -198,8 +214,6 @@ p {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 110px 1fr;
-      grid-template-columns: 110px 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -239,8 +253,39 @@ p {
           transform: scale(1.09);
 }
 
+.myskills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myskills .icon-row1 {
+  padding: 20px 35px 30px 35px;
+}
+
+.myskills .icon-row2 {
+  padding: 20px 35px 30px 35px;
+}
+
+.myskills .icon-row3 {
+  padding: 20px 35px 30px 35px;
+}
+
+.myskills .icon-row4 {
+  padding: 20px 35px 30px 35px;
+}
+
 .myskills ul {
   list-style: none;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,12 +300,6 @@ p {
   margin-right: 15px;
 }
 
-/* 
-.myskills{
-
-  display:flex;
-  flex-direction: column;
-} */
 .aboutme.interests ul {
   padding: 3px;
   padding-left: 20px;
@@ -281,11 +320,40 @@ p {
   color: orange;
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .container {
-    margin: 10px;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myskills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .myskills .icon-row1 {
+    padding: 20px 15px 20px 15px;
+  }
+  .myskills .icon-row2 {
+    padding: 20px 15px 20px 15px;
+  }
+  .myskills .icon-row3 {
+    padding: 20px 15px 20px 15px;
+  }
+  .myskills .icon-row4 {
+    padding: 20px 15px 20px 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */
