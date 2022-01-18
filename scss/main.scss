@@ -5,9 +5,14 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   //styling body element
   background: lightslategray; //background color of page
+ 
+}
+.cv-box{
   display: flex; //flex display for flexible web page elements
   justify-content: center; //all content under body element justified center
   align-items: center; //align all items under body element to center
@@ -18,13 +23,12 @@ body {
   //styling of container holding both left and right-hand side contents
   position: relative;
   width: 100%;
-  max-width: 1000px;
   min-height: 1000px;
   background: white;
   margin: 50px;
   display: grid;
   grid-template-columns: 1fr 2fr; // making 2 columns to be 1 and 2 fraction of the size
-
+  
   //box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
