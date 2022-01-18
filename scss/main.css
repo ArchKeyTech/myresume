@@ -33,7 +33,6 @@ body {
   margin: 50px;
   display: -ms-grid;
   display: grid;
-  width: 100%;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
 }
